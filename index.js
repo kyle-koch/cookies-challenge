@@ -11,9 +11,9 @@ app.get('/login', (req, res) => {
 
   if (name) {
     res.cookie('name', name);
-    res.send(`Name cookie set successfully! It's delicious`);
+    res.send(`Name set successfully- your ${name} cookie is delicious!`);
   } else {
-    res.send('I need your name to bake the cookie!.');
+    res.send('I need your name to bake the cookie!');
   }
 });
 
